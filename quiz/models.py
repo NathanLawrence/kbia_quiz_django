@@ -5,6 +5,7 @@ class Quiz(models.Model):
     title = models.CharField(max_length=100)
     pub_date = models.DateTimeField('date published')
     author = models.CharField(max_length=100)
+    verbose_name_plural = "Quizzes"
     def __str__(self):
         return self.title
     def was_published_recently(self):
